@@ -11,17 +11,21 @@
             "program": "${file}",
             "console": "integratedTerminal"
         },
-        //{
-        //    "name": "Chapter 2: CartPole",
-        //    "type": "python",
-        //    "request": "launch",
-        //    "program": "xvfb-run",
-        //    "console": "integratedTerminal",
-        //    "cwd": "${workspaceFolder}",
-        //    "args": [
-        //        "Chapter02/04_cartpole_random_monitor.py",
-        //     ]
-        //},
+        {
+            "name": "Chapter 6: 03_dqn_play.py",
+            "type": "python",
+            "request": "launch",
+            "program": "Chapter06/03_dqn_play.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "-m",
+                "PongNoFrameskip-v4-best_19.dat",
+                "-r",
+                "GAME_PLAY",
+                "--no-vis"
+             ]
+        },
     ]
 }
 
