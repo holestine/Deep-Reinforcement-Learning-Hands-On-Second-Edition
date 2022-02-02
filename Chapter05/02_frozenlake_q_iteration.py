@@ -26,7 +26,7 @@ class Agent:
             new_state, reward, is_done, _ = self.env.step(action)
             # Record the reward for the specific state, action and new state
             self.rewards[(self.state, action, new_state)] = reward
-            # Increment number of times the new state was reached by taking a specific actions from a specific state
+            # Increment number of times the new state was reached by taking a specific action from a specific state
             self.transits[(self.state, action)][new_state] += 1
             # Update current state
             self.state = self.env.reset() if is_done else new_state
