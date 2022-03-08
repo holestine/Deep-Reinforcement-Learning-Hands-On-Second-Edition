@@ -15,15 +15,42 @@
             "name": "Chapter 6: 03_dqn_play.py",
             "type": "python",
             "request": "launch",
-            "program": "Chapter06/03_dqn_play.py",
+            "program": "03_dqn_play.py",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/Chapter06",
             "args": [
                 "-m",
                 "PongNoFrameskip-v4-best_19.dat",
                 "-r",
                 "GAME_PLAY",
                 "--no-vis"
+             ]
+        },
+        {
+            "name": "Chapter 10: train_model.py",
+            "type": "python",
+            "request": "launch",
+            "program": "train_model.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter10",
+            "args": [
+                "--data",
+                "data/YNDX_150101_151231.csv",
+                "--run",
+                "debug"
+             ]
+        },
+        {
+            "name": "Chapter 11: 05_pong_pg.py",
+            "type": "python",
+            "request": "launch",
+            "program": "05_pong_pg.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter11",
+            "args": [
+                "--cuda",
+                "--name",
+                "test"
              ]
         },
     ]
