@@ -18,7 +18,7 @@ SAVES_DIR = "saves"
 
 BATCH_SIZE = 16
 LEARNING_RATE = 5e-4
-MAX_EPOCHES = 10000
+MAX_EPOCHS = 10000
 
 log = logging.getLogger("train")
 
@@ -109,7 +109,7 @@ if __name__ == "__main__":
             net.parameters(), lr=LEARNING_RATE, eps=1e-3)
         batch_idx = 0
         best_bleu = None
-        for epoch in range(MAX_EPOCHES):
+        for epoch in range(MAX_EPOCHS):
             random.shuffle(train_data)
             dial_shown = False
 

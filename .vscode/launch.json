@@ -53,6 +53,37 @@
                 "test"
              ]
         },
+        {
+            "name": "Chapter 14: train_crossent.py",
+            "type": "python",
+            "request": "launch",
+            "program": "train_crossent.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter14",
+            "args": [
+                "--cuda",
+                "--data",
+                "comedy",
+                "-n",
+                "crossent-comedy"
+             ]
+        },
+        {
+            "name": "Chapter 14: train_scst.py",
+            "type": "python",
+            "request": "launch",
+            "program": "train_scst.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter14",
+            "args": [
+                "--cuda",
+                "--data",
+                "comedy",
+                "-l",
+                "saves/crossent-comedy/epoch_090_0.787_0.115.dat",
+                "-n",
+                "sc-comedy-test2"
+             ]
+        },
     ]
 }
-
