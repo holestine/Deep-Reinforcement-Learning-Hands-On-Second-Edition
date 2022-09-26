@@ -85,5 +85,44 @@
                 "sc-comedy-test2"
              ]
         },
+        {
+            "name": "Chapter 15: games/make_games.sh",
+            "type": "python",
+            "request": "launch",
+            "program": "games/make_games.sh",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter15",
+            "args": [
+             ]
+        },
+        {
+            // run "pip install textworld" first
+            // if that doesn't work try "pip install git+https://github.com/microsoft/TextWorld@f1ac489fefeb6a48684ed1f89422b84b7b4a6e4b"
+            // neither have worked for me
+            "name": "Chapter 15: train_basic.py",
+            "type": "python",
+            "request": "launch",
+            "program": "train_basic.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter15",
+            "args": [
+                "-s",
+                "1",
+                "--cuda",
+                "-r",
+                "t1",
+             ]
+        },
+        {
+            "name": "Chapter 15: train_lm.py",
+            "type": "python",
+            "request": "launch",
+            "program": "train_lm.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter15",
+            "args": [
+             ]
+        },
+
     ]
 }
