@@ -124,6 +124,21 @@
              ]
         },
         {
+            "name": "Chapter 17: 02_train_a2c.py",
+            "type": "python",
+            "request": "launch",
+            "program": "02_train_a2c.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter17",
+            "args": [
+                "-n",
+                "test",
+                "--cuda",
+             ]
+             // To record the model in action use a command similar to the following:
+             //     ./adhoc/record_a2c.sh saves/a2c-test/best_+0.530_2000.dat a2c-res/
+        },
+        {
             "name": "Chapter 23: train.py",
             "type": "python",
             "request": "launch",
@@ -135,6 +150,36 @@
                 "Test"
              ]
         },
+        {
 
+            "name": "Chapter 17: 04_train_ddpg.py",
+            "type": "python",
+            "request": "launch",
+            "program": "04_train_ddpg.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter17",
+            "args": [
+                "-n",
+                "test",
+                "--cuda",
+             ]
+             // To record the model in action use a command similar to the following:
+             //     ./adhoc/record_ddpg.sh saves/ddpg-test/best_+12.300_17509000.dat ddpg-res/
+        },
+        {
+            "name": "Chapter 17: 06_train_d4pg.py",
+            "type": "python",
+            "request": "launch",
+            "program": "06_train_d4pg.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter17",
+            "args": [
+                "-n",
+                "test",
+                "--cuda",
+             ]
+             // To record the model in action use a command similar to the following:
+             //     ./adhoc/record_ddpg.sh saves/d4pg-test/best_+19.794_12604000.dat d4pg-res/
+        }
     ]
 }
