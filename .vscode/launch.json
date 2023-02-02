@@ -123,6 +123,18 @@
             "args": [
              ]
         },
+        {
+            "name": "Chapter 23: train.py",
+            "type": "python",
+            "request": "launch",
+            "program": "train.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/Chapter23",
+            "args": [
+                "--name",
+                "Test"
+             ]
+        },
 
     ]
 }
